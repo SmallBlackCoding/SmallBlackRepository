@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/content_icon"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/base_common_default_icon_small"
+        android:scaleType="fitXY"
+
+        />
+
+    <TextView
+        android:id="@+id/content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/content_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/content_icon"
+        android:maxLines="2"
+        android:text="标题巴拉巴拉巴拉"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/content_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/content_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/content_icon"
+        android:text="新华网"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/content_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/content_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="跟贴数"
+        android:textSize="12sp"
+
+        />
+
+    <TextView
+        android:id="@+id/content_toTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/content_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="置顶"
+        android:visibility="gone"
+
+        />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/content_icon"
+        />
+
+</RelativeLayout>
